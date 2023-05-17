@@ -1,0 +1,247 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+/*BOTONES*/
+button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5; );
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.5;);
+    background: rgb(41, 187, 123);
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: black;
+    /*padding: 15px 25px;*/
+}
+
+
+/*HEADER*/
+
+header .container {
+    max-width: 1400px;
+    margin: auto;;
+}
+
+header {
+    background-color: rgb(41, 187, 123);
+}
+
+header .logo {
+    padding: 25px 30px;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Principal e imagen*/
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    background-image:
+        url(media/codigo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#hero h1 {
+    color: white;
+}
+
+.color-principal {
+    color: rgb(41, 187, 123);
+}
+
+
+
+/*Descripcion*/
+
+.gonzalo-container{text-align: center;
+padding: 200px 12px;
+
+;
+
+width:;
+}
+
+/*Cartas*/
+
+#programas .container{
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: 20px 0;
+}
+#programas .cartas{background-position: center center;
+background-size: cover;
+padding: 50px;
+margin: 20px;
+border-radius: 15px;
+}
+
+
+#programas .container{padding: 50px 0px;}
+#programas h2 {margin-top: 0;}
+#programas p{display: ;}
+#programas button {margin-top: 20px;}
+
+.cartas:first-child {
+    background-image: url(media/html-css.jpg);
+}
+
+.cartas:nth-child(2) {
+    background-image: url(media/java.jpg);
+}
+
+.cartas:nth-child(3) {
+    background-image: url(media/python.jpg);
+}
+
+/*caracteristicas*/
+
+#caracteristicas .container{text-align:center;
+padding: 50px 12px;
+background-image: url(media/progra.jpg);
+background-position: center center;
+background-size: cover;
+margin: 20px 50px;
+color: white;
+width: auto;
+list-style: none;
+border-radius: 15px;}
+
+#caracteristicas li {margin: 12px 0;
+font-weight: bold;}
+
+/*contacto*/
+
+   #contacto .container{
+    text-align: center;
+    padding: 150px 200px}
+    #contacto li {margin: 12px 0;
+    font-weight: bold;
+   
+list-style: none;}
+
+
+/*Final*/
+#llama {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(30, 30, 30);
+    color: white;
+    height: 70vh;
+}
+
+#llama button {
+    font-size: 4vw;
+    margin-top: 40px;
+}
+
+#llama h2 {
+    font-size: 9vw;
+}
+
+
+
+
+/*Footer*/
+
+
+footer {
+    background-color: white;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer.container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/*COMIENZO DEL MEDIA*/
+
+@media (min-width:700px) {
+    header{position: fixed;
+    width: 100%;}
+    header .container{flex-direction: row;
+    justify-content: space-between;}
+    header nav {flex-direction: row;
+    padding-bottom: 0;
+padding-right: 20px;}
+
+#gonzalo .gonzalo-container {display: flex;
+justify-content: center;}
+#gonzalo .texto {width: 50%;
+text-align: initial;
+padding: 0px 30px;
+max-width: 600px;
+display: flex;
+justify-content: center;
+flex-direction: column;} 
+.gonzalo-container .img-container {background-image: url(media/programando.jpg);
+background-size: cover;
+background-position: center center;
+height: 400px;
+width: 400px;
+border-radius: 15px;
+}
+
+
+/*#programas .container{display: flex;
+justify-content: center;}
+#programas p{ display: block;
+margin-bottom: 30px;}
+
+#programas .cartas {padding: 15px;}
+}
